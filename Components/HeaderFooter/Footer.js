@@ -34,14 +34,14 @@ export default function Footer() {
         <div className="flex">
           <div className="flex items-center justify-around text-3xl gap-24 text-md font-medium text-[#d08829] max-lg:gap-10 max-lg:items-center">
             <a
-              href="https://www.linkedin.com/in/muzna-ali-sabzwari/"
+              href="https://www.linkedin.com/in/muzna-ali-siddiqui-226220282"
               target="_blank"
               className="hover:text-[#e3d2af]"
             >
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/MuznaAli30"
+              href="https://github.com/MuznaAli30?tab=repositories"
               target="_blank"
               className="hover:text-[#e3d2af]"
             >

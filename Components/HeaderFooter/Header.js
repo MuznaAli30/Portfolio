@@ -23,13 +23,12 @@ export default function Header1() {
     { name: "Skills", id: "skills" },
     { name: "Projects", id: "projects" },
     { name: "Resume", id: "Resume" },
-
   ];
 
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="bg-transparent text-white font-mono w-full flex justify-around items-center p-5 max-lg:hidden absolute">
+      <div className="bg-transparent text-white font-serif w-full flex justify-around items-center p-5 max-lg:hidden absolute">
         <div className="flex space-x-5">
           {items.map((item) => (
             <div
@@ -44,8 +43,21 @@ export default function Header1() {
 
         {/* Social Media */}
         <div className="flex space-x-5 text-md">
-          <FaLinkedin className="hover:text-[#c8934d] duration-500 cursor-pointer" />
-          <FaGithub className="hover:text-[#c8934d] duration-500 cursor-pointer" />
+          <a
+            href="https://www.linkedin.com/in/muzna-ali-siddiqui-226220282"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="hover:text-[#c8934d] duration-500 cursor-pointer" />
+          </a>
+
+          <a
+            href="https://github.com/MuznaAli30?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="hover:text-[#c8934d] duration-500 cursor-pointer" />
+          </a>
         </div>
       </div>
 
@@ -92,6 +104,25 @@ export default function Header1() {
                     {item.name}
                   </div>
                 ))}
+              </div>
+
+              {/* Social Media in Sidebar */}
+              <div className="flex space-x-5 text-md mt-10 ml-4">
+                <a
+                  href="https://www.linkedin.com/in/muzna-ali-siddiqui-226220282"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="hover:text-[#c8934d] duration-500 cursor-pointer" />
+                </a>
+
+                <a
+                  href="https://github.com/MuznaAli30?tab=repositories"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="hover:text-[#c8934d] duration-500 cursor-pointer" />
+                </a>
               </div>
             </div>
           </div>
