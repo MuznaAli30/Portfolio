@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply bg-black;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.bg-fixed-pic1 {
+  position: relative; /* Ensure the pseudo-element is positioned correctly */
+  @apply bg-fixed bg-center; /* Removed bg-cover */
+  background-image: url('/Assets/Images/BestFoodQuality.webp');
+  background-size: fixed; /* Adjust this value to control the size of the image */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-fixed-pic1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Black shade with 50% opacity */
+  z-index: -1; /* Make sure it's behind the content */
+}
+
+
+.bg-fixed-pic2 {
+  position: relative; /* Ensure the pseudo-element is positioned correctly */
+  @apply bg-fixed bg-cover bg-center;
+  background-image: url('/Assets/Images/QutationBg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-fixed-pic2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Black shade with 50% opacity */
+  z-index: -1; /* Make sure it's behind the content */
+}
+
+.bg-fixed-pic3 {
+  position: relative; /* Ensure the pseudo-element is positioned correctly */
+  @apply bg-fixed bg-cover bg-center;
+  background-image: url('/Assets/Images/Reserve1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-fixed-pic3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Black shade with 50% opacity */
+  z-index: -1; /* Make sure it's behind the content */
+}
+
+.bg-fixed-pic4 {
+  position: relative; /* Ensure the pseudo-element is positioned correctly */
+  @apply bg-fixed bg-cover bg-center;
+  background-image: url('/Assets/Images/SpecialMenus2.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-fixed-pic4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Black shade with 50% opacity */
+  z-index: -1; /* Make sure it's behind the content */
+}
+
+
+.bg-fixed-pic5 {
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    @apply bg-fixed bg-cover bg-center;
+    background-image: url('/Assets/Images/BestQltyFood2.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-fixed-pic5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Black shade with 50% opacity */
+    z-index: -1; /* Make sure it's behind the content */
+  }
+
+  .bg-fixed-pic6 {
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    @apply bg-fixed bg-cover bg-center;
+    background-image: url('/Assets/Images/Menu1BG.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-fixed-pic6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Black shade with 50% opacity */
+    z-index: -1; /* Make sure it's behind the content */
+  }
+
+
+
+  .bg-fixed-pic7 {
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    @apply bg-fixed bg-cover bg-center;
+    background-image: url('/Assets/Images/Menu2BG.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-fixed-pic7::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Black shade with 50% opacity */
+    z-index: -1; /* Make sure it's behind the content */
+  }
+
+
+
+  .bg-fixed-pic8 {
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    @apply bg-fixed bg-cover bg-center;
+    background-image: url('/Assets/Images/Menu3BG.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-fixed-pic8::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Black shade with 50% opacity */
+    z-index: -1; /* Make sure it's behind the content */
+  }
+
+
+
+  
