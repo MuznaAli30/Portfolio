@@ -10,6 +10,7 @@ import lifetune from "../../public/Assets/Images/lifetune.webp";
 import mysight from "../../public/Assets/Images/mysight.webp"; 
 import bus from "../../public/Assets/Images/bus.webp"; 
 import darbar from "../../public/Assets/Images/darbar.webp"; 
+import imgAI from '../../public/Assets/Images/imgAI.webp'
 
 export default function Project({ id }) {
   const projects = [
@@ -67,6 +68,13 @@ export default function Project({ id }) {
       desc: "Created a modern UI website to enhance frontend skills.",
       live: "https://sovy-restaurant-website.netlify.app/",
     },
+    {
+      image: imgAI, 
+      name: "AI Image Classifier (Streamlit + TensorFlow)",
+      desc: "Built an AI web app that identifies objects in uploaded images using MobileNetV2 model and Streamlit interface.",
+      live: "https://imagecalissifier-2yag7de9omfa2ftqm4dnpq.streamlit.app/",
+    },
+    
   ];
 
   return (

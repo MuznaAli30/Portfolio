@@ -25,7 +25,6 @@ export default function Resume({id}) {
             <ul className="list-disc list-inside text-gray-400 font-serif space-y-2">
               <li>InApp Solutions (Frontend & Backend Internship)</li>
               <li>Built responsive web applications using MERN stack</li>
-              <li>Worked on React Native mobile projects</li>
             </ul>
           </div>
 
@@ -44,9 +43,9 @@ export default function Resume({id}) {
           <div className="bg-[#1C1C1C] p-6 rounded-2xl shadow-md">
             <div className="text-2xl font-serif mb-3">Certifications</div>
             <ul className="list-disc list-inside text-gray-400 font-serif space-y-2">
-              <li>Frontend Development Course (React & Next.js)</li>
-              <li>Fullstack MERN Development Course</li>
-              <li>Tailwind CSS & UI Design</li>
+              <li>MERN Stack | INAPP SOLUTIONS | 30/05/2025</li>
+              <li>Career Essentials in Generative AI|26/08/2024</li>
+              <li>Webflow</li>
             </ul>
           </div>
 
@@ -55,7 +54,7 @@ export default function Resume({id}) {
             <div className="text-2xl font-serif mb-3">Languages</div>
             <ul className="list-disc list-inside text-gray-400 font-serif space-y-2">
               <li>Urdu (Native)</li>
-              <li>English (Intermediate)</li>
+              <li>English</li>
             </ul>
           </div>
         </div>
