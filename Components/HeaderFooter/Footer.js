@@ -1,55 +1,49 @@
+"use client";
 import React from "react";
-import { LuClock9, LuChefHat } from "react-icons/lu";
-import { FaFacebookF } from "react-icons/fa6";
-import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiTripadvisor } from "react-icons/si";
 import { MdPhone, MdEmail, MdLocationOn } from "react-icons/md";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="bg-black  bottom-0">
-      <div className="flex justify-around items-center max-lg:flex-col max-lg:items-start max-sm:items-center max-sm:justify-center">
-        <div className="flex items-center gap-2 m-2 cursor-pointer max-sm:hidden">
-          <MdEmail className="text-[#d08829] text-2xl " />
-          <div className="max-md:text-lg text-white max-sm:w-full ">
-            muznaalisiddiquisabzwari@gmail.com
-          </div>
-        </div>
-        <div className="flex items-center gap-5 m-2 cursor-pointer">
-          <MdPhone className="text-[#d08829] text-2xl" />
-          <div className="max-md:text-lg text-white max-sm:w-full">
-            +92 330 2445132
-          </div>
+    <footer className="bg-black text-white font-sans p-8 flex flex-col items-center justify-center gap-8">
+      
+      {/* Contact Info */}
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-center">
+        <div className="flex items-center gap-3">
+          <MdEmail className="text-[#DAA760] text-2xl" />
+          <span className="text-lg">muznaalisiddiquisabzwari@gmail.com</span>
         </div>
 
-        <div className="flex items-center gap-5 m-2 cursor-pointer">
-          <MdLocationOn className="text-[#d08829] text-2xl" />
-          <div className="max-md:text-lg text-white max-sm:w-full">
-            Karachi, Pakistan
-          </div>
+        <div className="flex items-center gap-3">
+          <MdPhone className="text-[#DAA760] text-2xl" />
+          <span className="text-lg">+92 330 2445132</span>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <MdLocationOn className="text-[#DAA760] text-2xl" />
+          <span className="text-lg">Karachi, Pakistan</span>
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-around gap-96 mt-16 max-sm:justify-between max-lg:gap-5 max-lg:flex-col">
-        <div className="flex">
-          <div className="flex items-center justify-around text-3xl gap-24 text-md font-medium text-[#d08829] max-lg:gap-10 max-lg:items-center">
-            <a
-              href="https://www.linkedin.com/in/muzna-ali-siddiqui-226220282"
-              target="_blank"
-              className="hover:text-[#e3d2af]"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://github.com/MuznaAli30?tab=repositories"
-              target="_blank"
-              className="hover:text-[#e3d2af]"
-            >
-              <FaGithub />
-            </a>
-          </div>
-        </div>
+      {/* Social Links */}
+      <div className="flex gap-8 text-3xl justify-center">
+        <a
+          href="https://www.linkedin.com/in/muzna-ali-siddiqui-226220282"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#E3D2AF] transition-colors duration-300"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/MuznaAli30?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#E3D2AF] transition-colors duration-300"
+        >
+          <FaGithub />
+        </a>
       </div>
-    </div>
+    </footer>
   );
 }

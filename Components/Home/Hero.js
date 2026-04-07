@@ -1,25 +1,21 @@
+"use client";
 import React from "react";
-import { FaAsterisk } from "react-icons/fa";
 import { IoRemoveOutline } from "react-icons/io5";
 
-export default function Hero({id}) {
+export default function Hero({ id }) {
   return (
-    <> <section id={id}>
-      <div className="max-w-full">
-        <div className="bg-black flex items-center justify-center flex-col max-sm:overflow-x-hidden min-h-screen">
+    <section id={id} className="bg-black min-h-screen flex items-center justify-center">
+      <div className="max-w-6xl w-full flex flex-col items-center px-5">
+        {/* Main Text */}
+        <h1 className="text-white font-serif italic text-center text-6xl sm:text-7xl md:text-8xl leading-tight">
+          Hello, I Am <br /> Muzna Ali Siddiqui Sabzwari
+        </h1>
 
-          {/* Main Text */}
-          <div className="m-5 text-white text-7xl font-serif text-center italic max-lg:w-[90%]">
-            Hello I Am<br></br> Muzna Ali Siddiqui Sabzwari
-          </div>
-
-          {/* Decorative Icons (bottom) */}
-          <div className="m-5 flex flex-row items-center justify-center space-x-5">
-            <IoRemoveOutline className="text-[#DAA760] text-9xl font-extrabold" />
-          </div>
+        {/* Decorative Icon */}
+        <div className="mt-10 flex items-center justify-center">
+          <IoRemoveOutline className="text-[#DAA760] text-8xl sm:text-9xl" />
         </div>
       </div>
-      </section>
-    </>
+    </section>
   );
 }

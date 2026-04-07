@@ -5,55 +5,35 @@ import me from "../../public/Assets/Images/me.webp";
 
 export default function About({ id }) {
   return (
-    <>
-    <section id={id}>
-      <div className="flex flex-row justify-evenly text-white bg-black max-lg:flex-col max-sm:w-[90%] max-sm:overflow-x-hidden">
-        {/* Left side image */}
+    <section id={id} className="bg-black text-white py-20">
+      <div className="max-w-6xl mx-auto flex flex-row justify-evenly items-center gap-10 flex-wrap px-5">
 
-        <div className="flex flex-col justify-around items-center">
-          <div className="text-white relative max-lg:top-8 m-5 w-[60%]  mb-96 max-lg:mb-16">
-            <Image className="rounded-full" src={me} alt="Fresh Food" />
-          </div>
+        {/* Left side image */}
+        <div className="flex justify-center items-center w-1/2 max-w-[400px] sm:w-2/5">
+          <Image
+            src={me}
+            alt="Muzna Ali"
+            className="rounded-3xl object-cover shadow-xl"
+            style={{ width: '100%', height: 'auto' }}
+          />
         </div>
+
         {/* Right side content */}
-        <div className="flex relative flex-col max-lg:top-0 max-sm:m-[10%] max-lg:m-[10%]">
-          <div className="text-3xl max-sm:text-xl text-[#DAA760] font-sans mb-7 flex flex-col items-start max-sm:ml-3">
-            About
-          </div>
-          <div className="text-5xl max-sm:text-3xl font-serif mb-7 flex flex-col items-start max-sm:ml-3">
-            Muzna Ali Siddiqui
-          </div>
+        <div className="flex flex-col w-1/2 sm:w-2/5 text-center sm:text-left">
+          <h2 className="text-[#DAA760] font-sans text-3xl sm:text-4xl mb-3">About</h2>
+          <h1 className="font-serif text-4xl sm:text-5xl mb-6">Muzna Ali Siddiqui</h1>
 
           {/* Info points */}
-          <ul className="text-white mb-8 space-y-2 text-lg max-sm:text-sm list-disc list-inside">
-            <li>
-              <span className="text-gray-300 font-light">Nationality:</span>{" "}
-              Pakistan
-            </li>
-            <li>
-              <span className="text-gray-300 font-light">Languages:</span>{" "}
-              English
-            </li>
-            <li>
-              <span className="text-gray-300 font-light">Languages:</span> Urdu
-            </li>
-            <li>
-              <span className="text-gray-300 font-light">Address:</span> Karcahi
-            </li>
-            <li>
-              <span className="text-gray-300 font-light">Phone:</span> +92 330
-              2445132
-            </li>
-            <li>
-              <span className="text-gray-300 font-light">Email:</span>
-              {"  "}
-              muznasabzwari@gmail.com
-            </li>
+          <ul className="list-disc list-inside text-lg sm:text-xl space-y-2 text-gray-200">
+            <li><span className="font-light text-gray-400">Nationality:</span> Pakistan</li>
+            <li><span className="font-light text-gray-400">Languages:</span> English, Urdu</li>
+            <li><span className="font-light text-gray-400">Address:</span> Karachi</li>
+            <li><span className="font-light text-gray-400">Phone:</span> +92 330 2445132</li>
+            <li><span className="font-light text-gray-400">Email:</span> muznasabzwari@gmail.com</li>
           </ul>
         </div>
+
       </div>
-      <div className="bg-black flex items-center  justify-evenly flex-row max-lg:flex-col max-sm:w-[90%] max-sm:overflow-x-hidden"></div>
-      </section>
-    </>
+    </section>
   );
 }
