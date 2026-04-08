@@ -1,6 +1,8 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import park from "../../public/Assets/Images/park.webp"; 
 import todo from "../../public/Assets/Images/todo.webp"; 
 import tour from "../../public/Assets/Images/tour.webp"; 
@@ -13,6 +15,10 @@ import darbar from "../../public/Assets/Images/darbar.webp";
 import imgAI from '../../public/Assets/Images/imgAI.webp';
 
 export default function Project({ id }) {
+  useEffect(() => {
+    AOS.init({ duration: 500, easing: 'ease-in-out', once: true });
+  }, []);
+
   const projects = [
     { image: park, name: "Parking Management System (MERN + TypeScript)", desc: "Built CRUD system for parking slots and feedback.", live: "https://github.com/MuznaAli30/Parking-Frontend" },
     { image: todo, name: "Todo Website (React + Redux + Firebase)", desc: "Task management app with Firebase and LocalStorage.", live: "https://github.com/MuznaAli30/Todo-Firebase" },
@@ -23,17 +29,25 @@ export default function Project({ id }) {
     { image: mysight, name: "My Sight (AI + SPM)", desc: "Frontend developer for an academic project focused on AI and SPM.", live: "https://mysight3300.netlify.app/" },
     { image: bus, name: "Business Frontend (Webflow)", desc: "Designed and developed a responsive frontend using Webflow.", live: "https://my-bizneszone-68c682.webflow.io/" },
     { image: darbar, name: "Make Reservations Website (Next.js + Tailwind CSS)", desc: "Created a modern UI website to enhance frontend skills.", live: "https://sovy-restaurant-website.netlify.app/" },
-    { image: imgAI, name: "AI Image Classifier (Streamlit + TensorFlow)", desc: "Built an AI web app that identifies objects in uploaded images using MobileNetV2 model and Streamlit interface.", live: "https://imagecalissifier-2yag7de9omfa2ftqm4dnpq.streamlit.app/" },
+    { image: imgAI, name: "AI Image Classifier (Streamlit + TensorFlow)", desc: "Built an AI web app that identifies objects in uploaded images using MobileNetV2 model and Streamlit interface.", live: "https://github.com/MuznaAli30/image_calissifier" },
   ];
 
   return (
     <section id={id} className="px-5 py-16 bg-[#0F0F0F]">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         {/* Title */}
-        <h2 className="text-white text-5xl font-serif mb-4 text-center max-sm:text-4xl">My Projects</h2>
+        <h2 
+          className="text-white text-5xl font-serif mb-4 text-center max-sm:text-4xl"
+          data-aos="fade-down"
+        >
+          My Projects
+        </h2>
 
         {/* Description */}
-        <p className="text-gray-300 font-serif text-center w-full md:w-2/3 mb-12">
+        <p
+          className="text-gray-300 font-serif text-center w-full md:w-2/3 mb-12"
+          data-aos="fade-up"
+        >
           Here are some of my frontend, full-stack, and mobile development projects built using React, Next.js, MERN Stack, and more.
         </p>
 
@@ -43,6 +57,8 @@ export default function Project({ id }) {
             <div
               key={i}
               className="bg-[#111] rounded-2xl p-5 shadow-lg hover:scale-105 transition-transform duration-500"
+              data-aos="fade-up"
+              data-aos-delay={i * 100}
             >
               <Image
                 src={project.image}
