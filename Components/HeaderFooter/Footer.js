@@ -9,19 +9,18 @@ export default function Footer() {
       
       {/* Contact Info */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-center">
+        <div className="flex items-center gap-3 max-lg:hidden">
+          <MdEmail className="text-[#DAA760] text-2xl " />
+          <span className="text-lg">muznaalisiddiquisabzwari@gmail.com</span>
+        </div>
         <div className="flex items-center gap-3 ">
           <MdEmail className="text-[#DAA760] text-2xl" />
-          <span className="text-lg">muznaalisiddiquisabzwari@gmail.com</span>
+          <span className="text-lg">muznasabzwari@gmail.com</span>
         </div>
 
         <div className="flex items-center gap-3">
           <MdPhone className="text-[#DAA760] text-2xl" />
           <span className="text-lg">+92 330 2445132</span>
-        </div>
-
-        <div className="flex items-center gap-3 max-lg:hidden">
-          <MdLocationOn className="text-[#DAA760] text-2xl" />
-          <span className="text-lg">Karachi, Pakistan</span>
         </div>
       </div>
 
