@@ -144,6 +144,19 @@ export default function ResumeSection() {
             </motion.div>
 
             <motion.div variants={fadeInUp} className="space-y-6">
+            <div className="gradient-border p-4 text-center">
+                <p className="text-sm text-slate-400">
+                Prefer reading? Check my Medium articles
+                </p>
+                <a
+                  href={"https://medium.com/me/stories?tab=posts-published"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-block text-sm font-medium text-cyan-400 transition-colors hover:text-cyan-300"
+                >
+                  Open Medium Link in new tab →
+                </a>
+              </div>
               <div className="glass-card p-5 sm:p-6">
                 <div className="mb-4 flex items-center gap-2">
                   <HiBadgeCheck className="text-xl text-pink-400" />
@@ -177,6 +190,7 @@ export default function ResumeSection() {
                   ))}
                 </div>
               </div>
+              
 
               <div className="gradient-border p-4 text-center">
                 <p className="text-sm text-slate-400">

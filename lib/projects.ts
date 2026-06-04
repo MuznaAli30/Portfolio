@@ -12,9 +12,30 @@ import mysight from "@/public/Assets/Images/mysight.webp";
 import bus from "@/public/Assets/Images/bus.webp";
 import darbar from "@/public/Assets/Images/darbar.webp";
 import imgAI from "@/public/Assets/Images/imgAI.webp";
+import aiStudyAssistant from "@/public/Assets/Images/ai-study-assistant.webp";
 
 /** Latest full-stack & AI builds — shown first in the projects grid */
 export const FEATURED_PROJECTS: Project[] = [
+
+  {
+    id: "ai-study-assistant",
+    title: "AI Study Assistant",
+    description:
+      "Full-stack AI-powered study assistant that allows students to chat with an LLM tutor in real time. Built with Next.js frontend and FastAPI backend, integrated with OpenRouter for intelligent responses, featuring a ChatGPT-like interface, typing indicators, and responsive UI.",
+    image: aiStudyAssistant,
+    tags: ["AI", "Full Stack", "EdTech"],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "FastAPI",
+      "Python",
+      "OpenRouter",
+    ],
+    githubUrl: "https://github.com/MuznaAli30/ai-study-assistant",
+    featured: true,
+  },
+  
   {
     id: "smart-study-ai",
     title: "Smart Study AI",
@@ -31,7 +52,7 @@ export const FEATURED_PROJECTS: Project[] = [
       "OpenRouter",
       "Netlify",
     ],
-    liveUrl: "https://mysight3300.netlify.app/",
+    liveUrl: "https://6a1cbdd7129c4702e1826591--coruscating-cascaron-3eb916.netlify.app/",
     featured: true,
   },
   {
